@@ -1,0 +1,5 @@
+vbell off
+multiuser on
+hardstatus alwayslastline
+hardstatus string '%{= kw} %=%{g}%-w%{Y}%t%{-}%+w %=%{g}[%{B} %d/%m %{W}%c %{g}]'
+

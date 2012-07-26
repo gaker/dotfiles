@@ -1,0 +1,23 @@
+[user]
+    name = Greg Aker
+    email = greg@gregaker.net
+[color]
+    status = auto
+    diff = auto
+    branch = auto
+[alias]
+    st = status
+    di = diff
+    co = checkout
+    ci = commit
+    br = branch
+    sta = stash 
+[core]
+    excludesfile = /Users/gregaker/.gitignore
+    editor = /usr/bin/vim
+    rebase = true
+[branch]
+    autosetuprebase = remote
+[push]
+    default = upstream
+

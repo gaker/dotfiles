@@ -1,0 +1,30 @@
+[ui]
+username = Greg Aker <greg@gregaker.net>
+editor = /usr/bin/vim 
+
+[extensions]
+convert =
+color = 
+hgext.graphlog = 
+hgext.extdiff = 
+hgext.fetch =
+hgshelve = /Users/gaker/.dotfiles/mercurial_extensions/hgshelve/hgshelve.py
+localbranch = /Users/gaker/.dotfiles/mercurial_extensions/localbranch/localbranch.py
+lint = /Users/gaker/.dotfiles/mercurial_extensions/hg-lint.py
+pager =
+hgext.fetch =
+transplant=
+mq = 
+
+[alias]
+sl = log --template '{rev} | {date|shortdate} | {author|user}: {desc|strip|firstline}\n' -r tip:-10
+slog = log --template '{rev}:{node|short} {desc|firstline}\n'
+sglog = glog --style=/Users/gaker/.dotfiles/mercurial_extensions/mercurial-cli-templates/map-cmdline.sglog
+rv = revert --no-backup
+
+
+[pager]
+pager = LESS='FSRX' less
+quiet = true
+attend = log, glog, diff, incoming, outgoing
+
